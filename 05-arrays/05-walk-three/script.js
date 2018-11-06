@@ -40,5 +40,13 @@
     ];
 
     // your code here
+    
+    document.getElementById("run").addEventListener("click", function(){
+        
+        people.map(function(people){
+            
+            console.log(people.lastname);})
+        
+    })
 
 })();

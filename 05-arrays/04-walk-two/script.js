@@ -27,5 +27,9 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+        
+        fruits.map((val)=>console.log(val));
+    })
 
 })();

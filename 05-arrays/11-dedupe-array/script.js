@@ -29,5 +29,10 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(fruits){
+       
+        var fruitsunique = fruits.filter(function(item,pos){return fruits.indexOf(item)===pos;})
+        
+    });
 
 })();

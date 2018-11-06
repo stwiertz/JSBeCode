@@ -89,6 +89,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click",function(){
+
+        var sum=0;
+        var valeurInitiale = 0;
+        console.log(people.reduce(function (accumulateur, valeurCourante) { return accumulateur + valeurCourante.age;}, 0));
+        
+    });
 
 })();

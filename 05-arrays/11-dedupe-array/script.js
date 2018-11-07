@@ -29,10 +29,12 @@
     ];
 
     // your code here
-    document.getElementById("run").addEventListener("click",function(fruits){
+    document.getElementById("run").addEventListener("click",function(){
        
-        var fruitsunique = fruits.filter(function(item,pos){return fruits.indexOf(item)===pos;})
-        
+        var fruitsunique = fruits.filter(function (value, index, self) { 
+            return self.indexOf(value) === index;
+        });
+        console.log(fruitsunique);
     });
 
 })();

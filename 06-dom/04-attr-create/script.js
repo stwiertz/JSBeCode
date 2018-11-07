@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
-
+    
+    
+    // va chercher l'attribut data-image dans l'id source
+    var source = document.getElementById("source")    //"va" dans la div avec l'id source
+    var dataImage = source.getAttribute("data-image"); //stoc la valeur de l'attribut data-image
+    var img = document.createElement('img');
+    img.src= dataImage;
+    document.getElementById("target").appendChild(img);
+    source.parentNode.removeChild(source);
+        
 })();

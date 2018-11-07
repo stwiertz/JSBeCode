@@ -12,5 +12,7 @@
 (function() {
 
     // your code here
-
+    document.getElementsByClassName("target")[0].innerHTML = "owned";//si on met pas les [] il sait pas a quel "repetition de la classe appliqué le changement
+    
+    
 })();

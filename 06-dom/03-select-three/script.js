@@ -12,5 +12,7 @@
 (function() {
 
     // your code here
-
+    for (let i=0; i<document.getElementsByClassName("target").length;i++){
+    document.getElementsByClassName("target")[i].innerHTML="owned";
+}
 })();

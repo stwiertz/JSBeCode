@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    
+    var tbl = document.createElement("table");
+    
+    let target = document.getElementById("target");
+    
+    target.appendChild(tbl);
+    
+    for(var i=0; i<10; i++){
+    target.getElementsByTagName("table")[0].insertRow(i).innerHTML= "coucou";
+    
+    }
+    
+    
+    
 })();

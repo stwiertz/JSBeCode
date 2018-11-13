@@ -10,7 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    
+    var rnd = Math.floor((Math.random()*100)+1);
+    var loser=0;
+    do{
+     
+        
+        var answer = prompt("1-100?"+loser+"fail");
+        
+        if(answer < rnd){ alert("plus grand")}
+        
+        else if(answer == rnd){ alert("nice")}
+        else {alert("petit")}
+        
+        
+        loser++;
+        
+    }while( answer != rnd );
 
 })();

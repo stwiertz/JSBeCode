@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    
+    let form = document.getElementById("pass-one");
+    
+    form.setAttribute("maxlength", 10);
+    
+    form.addEventListener("input", function(){
+        
+        document.getElementById("counter").innerHTML= form.value.length+"/10";
+        
+    })
+    
 
 })();

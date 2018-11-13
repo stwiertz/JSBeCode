@@ -12,5 +12,31 @@
 (function() {
 
     // your code here
-
+    
+    document.querySelectorAll("button").forEach(function(btn){
+               
+               btn.addEventListener("click",function() {
+                  
+                   
+                   var min = btn.getAttribute("data-min");
+                   var max = btn.getAttribute("data-max");
+                
+                  if(parseInt(btn.innerHTML,10)< max){
+                   
+                      
+                   btn.innerHTML = parseInt(btn.innerHTML,10)+1;
+                      if(btn.innerHTML.length==1){btn.innerHTML="0" + btn.innerHTML;}
+                      
+                  }else{btn.innerHTML= min ;}
+                   
+                   document.getElementById("target").innerHTML="+" + document.getElementById("part-one").innerHTML + document.getElementById("part-two").innerHTML + document.getElementById("part-three").innerHTML + document.getElementById("part-four").innerHTML;
+                   
+                   
+                   
+               })
+               
+               })
+    
+    
+    
 })();

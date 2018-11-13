@@ -18,7 +18,18 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
-
+    let num =0;
+    
     // your code here
+    let img = document.getElementsByClassName("material")[0].getElementsByTagName("img")[0];
+    
+    document.getElementById("next").addEventListener("click",function(){
+        
+        if(num==4){num=0;}else{ num++;}
+        
+        img.src = gallery[num];
+        
+        
+    });
 
 })();

@@ -10,7 +10,58 @@
 // You will have time to focus on it later.
 
 (function() {
+    
+   var target = document.getElementById("target");
+    var table = target.innerHTML;
+    target.innerHTML="";
+    var i =0;
+    var speed =500;
+        
+    typeWriter();
+function typeWriter() {
+  if (i < table.length) {
+      
+    target.innerHTML += table.charAt(i);
+    i++;
+    
+      speed= Math.floor((Math.random()*150)+30);
+      console.log(speed);
+    setTimeout(typeWriter, speed);
+      
+  }
+}
+    
 
-    // your code here
-
+        
+        
+    
+    
+    /*
+    var lettre =document.getElementById("target").innerHTML.split("");
+    document.getElementById("target").innerHTML="";
+    var i =0;
+    function ecrire(){
+        
+         if(i< lettre.length){
+            
+            var para = document.createElement("span");
+                      
+            var t = document.createTextNode(lettre[i]);
+            para.appendChild(t);
+            document.getElementById("target").appendChild(para);
+             
+            i++;
+         }
+        
+    }
+    
+    function rdmtime(){
+        
+ Math.floor((Math.random()*200)+200);
+        
+    }
+    
+    setInterval(ecrire, rdmtime);
+    */
+    
 })();

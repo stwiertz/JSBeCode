@@ -12,18 +12,19 @@
 (function() {
 
     // your code here
-    document.getElementsByClassName("material")[0].addEventListener("hover",function(){
+    let image = document.getElementsByTagName("img")[0];
+    
+    
+    image.addEventListener("mouseover",function(){
        
         
-        var el = document.querySelector("section.material.figure img");
+        let lien = image.getAttribute("data-hover");
         
+        console.log(lien);
+    
         
-     let source = document.getElementsByClassName("material.figure. ")[0];
-        let datahover = source.getAttribute("data-hover");
-        console.log(datahover);
+       image.src= lien;
         
-        document.getElementsByClassName("material").img.src= datahover;
-        
-    })
+    });
     
 })();
